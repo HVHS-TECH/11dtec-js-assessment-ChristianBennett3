@@ -1,5 +1,6 @@
 var pies = ["minceCheese", "mince", "steakCheese", "steak", "butterChicken", "baconEgg", "potatoTop"]
 
-function getFormInput(){
 
+function getFormInput(){
+    const PIE_NAME_FIELD = document.getElementById("pieNameField");
 }
