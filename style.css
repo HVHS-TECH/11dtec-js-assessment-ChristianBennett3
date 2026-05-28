@@ -2,4 +2,21 @@ body{
     background-color: floralwhite;
     font-family: sans-serif;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.PieGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  padding: 10px;
+}
+
+.PieContent{
+    border-width: 3px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-radius: 5px;
+    margin: 5px;
 }
