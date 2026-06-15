@@ -1,5 +1,5 @@
 body{
-  background-color: floralwhite;
+  background-color: #f6e4cc;
   font-family: sans-serif;
   text-align: center;
   margin-left: 20px;
@@ -29,4 +29,18 @@ body{
   border-style: solid;
   border-radius: 12px;
   margin: 20px;
+}
+
+.DrinksMenu, .ComboMenu{
+  grid-row: span 2;
+  border-width: 3px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 12px;
+  margin: 20px;
+  height: 900px;
+}
+
+img{
+  max-width: 20%;
 }
