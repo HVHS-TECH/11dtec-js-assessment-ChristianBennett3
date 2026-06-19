@@ -1,2 +1,23 @@
-var pies = ["minceCheese", "mince", "steakCheese", "steak", "butterChicken", "baconEgg", "potatoTop"]
+/**************************************
+Pie Shop
+ *************************************/
 
+/**************************************
+Variables
+ *************************************/
+
+var pies = ["minceCheese", "steakCheese", "butterChicken", "apple"];
+
+/**************************************
+Main Code
+ *************************************/
+
+
+
+/**************************************
+Functions
+ *************************************/
+
+function addPie(type){
+    console.log(type);
+}

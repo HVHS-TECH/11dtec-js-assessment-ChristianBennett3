@@ -33,15 +33,18 @@ body{
 }
 
 .DrinksMenu, .ComboMenu{
-  grid-row: span 2;
   border-width: 3px;
   border-color: #3d210d;
   border-style: solid;
   border-radius: 12px;
   margin: 20px;
-  height: 900px;
+  height: 450px;
 }
 
-img{
+.LogoImage{
   max-width: 20%;
+}
+
+.PieImage{
+  max-width: 90%;
 }
