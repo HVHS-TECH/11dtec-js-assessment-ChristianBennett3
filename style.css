@@ -48,3 +48,9 @@ body{
 .PieImage{
   max-width: 90%;
 }
+
+hr{
+  border: none;
+  height: 2px;
+  background-color: black;
+}

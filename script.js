@@ -6,7 +6,8 @@ Pie Shop
 Variables
  *************************************/
 
-var pies = ["minceCheese", "steakCheese", "butterChicken", "apple"];
+var pies = ["Mince and Cheese", "Steak and Cheese", "Butter Chicken", "Apple"];
+const pieOrderOutput = document.getElementById("PieOrderOutput")
 
 /**************************************
 Main Code
@@ -18,6 +19,7 @@ Main Code
 Functions
  *************************************/
 
-function addPie(type){
-    console.log(type);
+function addPie(_type, _price){
+    console.log(_type, _price); 
+    pieOrderOutput.innerHTML += "<p>" + pies[_type] + ": $" + _price + "</p>";
 }
