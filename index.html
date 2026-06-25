@@ -13,7 +13,7 @@
     <div class="PieGrid">
         <div class="PieContent">
             <div class="MinceAndCheese">
-                <h2>Mince & Cheese</h2>
+                    <h2>Mince & Cheese</h2>
                 <img src="Images/minceandcheesepie.png" class="PieImage" alt="">
                 <button class="PieButton" onclick="addPie(0, 5)">Add to order</button>
             </div>
@@ -29,9 +29,26 @@
                 <h2>My Order</h2>
                 <hr>
                 <div id="PieOrderOutput">
-                    <h3>Items:</h3>
+                    <div id="ItemsOutput">
+                        <h3>Items:</h3>
+                    </div>
+                    <div id="UserOrderInfo">
+                        <hr>
+                        <h3>Details:</h3>
+                        <form onsubmit="return false;">
+                            <label for="formName">Name: </label>
+                            <input type="text" name="formName" id="nameField" placeholder="Name">
+                          </form>
+                          <form onsubmit="return false;">
+                            <label for="formName">Money: </label>
+                            <input type="text" name="formName" id="moneyField" placeholder="Money">
+                            <br>
+                            <input type="submit" onclick=getFormInput()>
+                          </form>
+                          
+                    </div>
+                    <hr>
                 </div>
-                <hr>
         </div>
         <div class="PieContent">
             <div class="ButterChicken">
