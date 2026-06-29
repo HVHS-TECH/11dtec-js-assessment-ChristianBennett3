@@ -7,15 +7,13 @@ Variables
  *************************************/
 
 var pies = ["Mince and Cheese", "Steak and Cheese", "Butter Chicken", "Apple"];
-var orderInfo;
+var totalPrice = 0;
 const OrderOutput = document.getElementById("PieOrderOutput");
 const ItemsOutput = document.getElementById("ItemsOutput");
 
 /**************************************
 Main Code
  *************************************/
-
-
 
 /**************************************
 Functions
@@ -24,7 +22,8 @@ Functions
 function addPie(_type, _price){
     console.log(_type, _price); 
     ItemsOutput.innerHTML += "<p>" + pies[_type] + ": $" + _price + "</p>";
-    
+    totalPrice = totalPrice + _price;
+    console.log(totalPrice)
 }
 
 function getFormInput(){
@@ -44,5 +43,5 @@ function getFormInput(){
 
 function start(){
     OrderOutput.innerHTML += "<p>Name: " + orderInfo.userName + "<br>Money: " + orderInfo.userMoney + "</p>"
+    console.log(totalPrice)
 }
-
