@@ -10,6 +10,11 @@ var pies = ["Mince and Cheese", "Steak and Cheese", "Butter Chicken", "Apple"];
 var totalPrice = 0;
 const OrderOutput = document.getElementById("PieOrderOutput");
 const ItemsOutput = document.getElementById("ItemsOutput");
+const RecieptOutput = document.getElementById("ReceiptOutput")
+let orderInfo = {
+    userName: "",
+    userMoney: 0
+};
 
 /**************************************
 Main Code
@@ -34,7 +39,7 @@ function getFormInput(){
         userMoney: Number(MONEY_FIELD.value),
     }
 
-    if (typeof orderInfo.userName != "string" || orderInfo.userName == "" || orderInfo.userName.length < 3){
+    if (typeof orderInfo.userName != 'string' || orderInfo.userName == "" || orderInfo.userName.length < 3){
         alert("Please enter a valid name")
         return
     }
@@ -42,6 +47,8 @@ function getFormInput(){
 }
 
 function start(){
-    OrderOutput.innerHTML += "<p>Name: " + orderInfo.userName + "<br>Money: " + orderInfo.userMoney + "</p>"
-    console.log(totalPrice)
+    OrderOutput.innerHTML += "<p>Customer: " + orderInfo.userName + "<br>Money: $" + orderInfo.userMoney.toFixed(2) + "</p>"; 
+
+    OrderOutput.innerHTML += "<p>Total Order Cost: $" + totalPrice.toFixed(2) + "</p>";
+    ReceiptOutput.innerHTML = "";
 }
