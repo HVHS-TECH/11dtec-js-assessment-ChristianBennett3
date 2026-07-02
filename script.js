@@ -8,13 +8,13 @@ Variables
 
 var pies = ["Mince and Cheese", "Steak and Cheese", "Butter Chicken", "Apple"];
 var totalPrice = 0;
-const OrderOutput = document.getElementById("PieOrderOutput");
 const ItemsOutput = document.getElementById("ItemsOutput");
-const RecieptOutput = document.getElementById("ReceiptOutput")
+const RecieptOutput = document.getElementById("RecieptOutput");
 let orderInfo = {
     userName: "",
     userMoney: 0
 };
+var change;
 
 /**************************************
 Main Code
@@ -47,8 +47,10 @@ function getFormInput(){
 }
 
 function start(){
-    OrderOutput.innerHTML += "<p>Customer: " + orderInfo.userName + "<br>Money: $" + orderInfo.userMoney.toFixed(2) + "</p>"; 
-
-    OrderOutput.innerHTML += "<p>Total Order Cost: $" + totalPrice.toFixed(2) + "</p>";
-    ReceiptOutput.innerHTML = "";
+    RecieptOutput.innerHTML = "";
+    change = orderInfo.userMoney - totalPrice;
+    RecieptOutput.innerHTML += "<h3>Reciept:</h3>";
+    RecieptOutput.innerHTML += "<p>Name: " + orderInfo.userName + "<br>Money: $" + orderInfo.userMoney.toFixed(2) + "</p>"; 
+    RecieptOutput.innerHTML += "<p>Total Order Cost: $" + totalPrice.toFixed(2) + "</p>";
+    RecieptOutput.innerHTML += "<p>Change: $" + change;
 }
