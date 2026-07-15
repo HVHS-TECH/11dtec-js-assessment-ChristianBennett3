@@ -20,7 +20,7 @@ body{
   border-style: solid;
   border-radius: 12px;
   margin: 20px;
-  height: 350px;
+  padding: 5px;
 }
 
 .OrderTab{
@@ -68,8 +68,8 @@ hr{
 }
 
 button{
-  background-color: #3d210d;
-  color: white;
+  background-color: transparent;
+  color: #3d210d;
   border-width: 3px;
   border-color: #3d210d;
   border-style: solid;
@@ -84,4 +84,5 @@ button:hover{
   transition: background-color 0.1s ease-in;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   background-color: #463122;
+  color: white;
 }

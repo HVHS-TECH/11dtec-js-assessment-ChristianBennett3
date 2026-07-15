@@ -16,7 +16,7 @@
                 <img src="Images/minceandcheesepie.png" class="PieImage" alt="">
                 <div class="PieActions">
                     <span class="PiePrice">$5</span>
-                    <button class="PieButton" onclick="addPie(0, 5)">Add to order</button>
+                    <button class="PieButton" onclick="addPie(0, 6.5)">Add to order</button>
                 </div>
             </div>
         </div>
@@ -25,6 +25,10 @@
             <div class="SteakAndCheese">
                 <h2>Steak & Cheese</h2>
                 <img src="Images/steakandcheesepie.png" class="PieImage" alt="">
+                <div class="PieActions">
+                    <span class="PiePrice">$5</span>
+                    <button class="PieButton" onclick="addPie(0, 6.5)">Add to order</button>
+                </div>
             </div>
         </div>
         <div class="OrderTab">
@@ -43,6 +47,8 @@
                     <label for="formName">Money: </label>
                     <input type="text" name="formName" id="moneyField" placeholder="Money">
                     <br>
+                    <button id="AutoPriceButton" onclick="autoPrice()">Auto Price</button>
+                    <br>
                     <input type="submit" onclick=getFormInput()>
                 </form>
                 <hr>
@@ -55,6 +61,10 @@
             <div class="ButterChicken">
                 <h2>Butter Chicken</h2>
                 <img src="Images/butterchickenpie.png" class="PieImage" alt="">
+                <div class="PieActions">
+                    <span class="PiePrice">$5</span>
+                    <button class="PieButton" onclick="addPie(0, 7)">Add to order</button>
+                </div>
             </div>
 
         </div>
@@ -62,6 +72,10 @@
             <div class="Apple">
                 <h2>Apple</h2>
                 <img src="Images/applepie.png" class="PieImage" alt="">
+                <div class="PieActions">
+                    <span class="PiePrice">$5</span>
+                    <button class="PieButton" onclick="addPie(0, 7)">Add to order</button>
+                </div>
             </div>
         </div>
         <div class="DrinksMenu">

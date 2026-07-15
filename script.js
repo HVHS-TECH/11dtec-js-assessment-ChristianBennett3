@@ -15,6 +15,7 @@ let orderInfo = {
     userMoney: 0
 };
 var change;
+var moneyField = document.getElementById("moneyField");
 
 /**************************************
 Main Code
@@ -26,7 +27,7 @@ Functions
 
 function addPie(_type, _price){
     console.log(_type, _price); 
-    ItemsOutput.innerHTML += "<p>" + pies[_type] + ": $" + _price + "</p>";
+    ItemsOutput.innerHTML += "<p>" + pies[_type] + ": $" + _price.toFixed(2) + "</p>";
     totalPrice = totalPrice + _price;
     console.log(totalPrice)
 }
@@ -47,10 +48,18 @@ function getFormInput(){
 }
 
 function start(){
+    if (totalPrice == 0){
+        alert("Your order is empty; please add an item")
+        return
+    }
     RecieptOutput.innerHTML = "";
     change = orderInfo.userMoney - totalPrice;
     RecieptOutput.innerHTML += "<h3>Reciept:</h3>";
     RecieptOutput.innerHTML += "<p>Name: " + orderInfo.userName + "<br>Money: $" + orderInfo.userMoney.toFixed(2) + "</p>"; 
     RecieptOutput.innerHTML += "<p>Total Order Cost: $" + totalPrice.toFixed(2) + "</p>";
     RecieptOutput.innerHTML += "<p>Change: $" + change;
+}
+
+function autoPrice(){
+    moneyField.value = totalPrice.toFixed(2);
 }
