@@ -15,7 +15,7 @@
                     <h2>Mince & Cheese</h2>
                 <img src="Images/minceandcheesepie.png" class="PieImage" alt="">
                 <div class="PieActions">
-                    <span class="PiePrice">$5</span>
+                    <span class="PiePrice">$6.50</span>
                     <button class="PieButton" onclick="addPie(0, 6.5)">Add to order</button>
                 </div>
             </div>
@@ -26,8 +26,8 @@
                 <h2>Steak & Cheese</h2>
                 <img src="Images/steakandcheesepie.png" class="PieImage" alt="">
                 <div class="PieActions">
-                    <span class="PiePrice">$5</span>
-                    <button class="PieButton" onclick="addPie(0, 6.5)">Add to order</button>
+                    <span class="PiePrice">$6.50</span>
+                    <button class="PieButton" onclick="addPie(1, 6.5)">Add to order</button>
                 </div>
             </div>
         </div>
@@ -37,8 +37,9 @@
             <div id="ItemsOutput">
                 <h3>Items:</h3>
             </div>
+            <hr>
             <div id="UserOrderInfo">
-                <hr>
+            
                 <h3>Details:</h3>
                 <form onsubmit="return false;">
                     <label for="formName">Name: </label>
@@ -62,8 +63,8 @@
                 <h2>Butter Chicken</h2>
                 <img src="Images/butterchickenpie.png" class="PieImage" alt="">
                 <div class="PieActions">
-                    <span class="PiePrice">$5</span>
-                    <button class="PieButton" onclick="addPie(0, 7)">Add to order</button>
+                    <span class="PiePrice">$7.00</span>
+                    <button class="PieButton" onclick="addPie(2, 7)">Add to order</button>
                 </div>
             </div>
 
@@ -73,8 +74,8 @@
                 <h2>Apple</h2>
                 <img src="Images/applepie.png" class="PieImage" alt="">
                 <div class="PieActions">
-                    <span class="PiePrice">$5</span>
-                    <button class="PieButton" onclick="addPie(0, 7)">Add to order</button>
+                    <span class="PiePrice">$7.00</span>
+                    <button class="PieButton" onclick="addPie(3, 7)">Add to order</button>
                 </div>
             </div>
         </div>
@@ -87,6 +88,7 @@
 
 
     </div>
+    <button onclick="clearOrder()">Clear order</button>
 
     <script src="script.js"></script>
 </body>

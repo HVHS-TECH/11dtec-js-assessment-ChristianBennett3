@@ -52,6 +52,10 @@ function start(){
         alert("Your order is empty; please add an item")
         return
     }
+    if (orderInfo.userMoney <= 0 || orderInfo.userMoney < totalPrice){
+        alert("You do not have enough money")
+        return;
+    }
     RecieptOutput.innerHTML = "";
     change = orderInfo.userMoney - totalPrice;
     RecieptOutput.innerHTML += "<h3>Reciept:</h3>";
@@ -62,4 +66,12 @@ function start(){
 
 function autoPrice(){
     moneyField.value = totalPrice.toFixed(2);
+}
+
+function clearOrder(){
+    RecieptOutput.innerHTML = "";
+    ItemsOutput.innerHTML = "";
+    moneyField.value = "";
+    nameField.value = "";
+
 }
