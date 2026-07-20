@@ -55,7 +55,15 @@ function start(){
     if (orderInfo.userMoney <= 0 || orderInfo.userMoney < totalPrice){
         alert("You do not have enough money")
         return;
+    } else if (Number.isNaN(orderInfo.userMoney)){
+        alert("Please enter a number as your price")
     }
+    if (/\d/.test(orderInfo.userName)) {
+        alert("Name can not contain numbers");
+    } else if (orderInfo.userName.length < 3 || userInfo.userName.length > 15){
+        
+    }
+
     RecieptOutput.innerHTML = "";
     change = orderInfo.userMoney - totalPrice;
     RecieptOutput.innerHTML += "<h3>Reciept:</h3>";
