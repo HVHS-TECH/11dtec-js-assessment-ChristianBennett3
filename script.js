@@ -52,10 +52,12 @@ function start(){
         alert("Your order is empty; please add an item")
         return
     }
-    if (orderInfo.userMoney <= 0 || orderInfo.userMoney < totalPrice){
+    if (orderInfo.userMoney <= 0 || orderInfo.userMoney < totalPrice || Number.isInteger(orderInfo.userMoney)){
         alert("You do not have enough money")
         return;
     }
+
+    
     RecieptOutput.innerHTML = "";
     change = orderInfo.userMoney - totalPrice;
     RecieptOutput.innerHTML += "<h3>Reciept:</h3>";
