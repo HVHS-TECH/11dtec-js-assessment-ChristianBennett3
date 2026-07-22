@@ -68,21 +68,43 @@ hr{
 }
 
 button{
-  background-color: transparent;
-  color: #3d210d;
+  background-color: #463122;
+  color: white;
   border-width: 3px;
-  border-color: #3d210d;
+  border-color: black;
   border-style: solid;
   border-radius: 5px;
   width: 100px;
   height: 30px;
   transition: box-shadow 0.5s ease-out;
+  margin: 5px;
 }
 
 button:hover{
   transition: box-shadow 0.1s ease-in;
   transition: background-color 0.1s ease-in;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  background-color: #463122;
+  background-color: #705039;
+  color: white;
+}
+
+.SubmitButton{
+  background-color: #779867;
+  color: white;
+  border-width: 3px;
+  border-color: #32422a;;
+  border-style: solid;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  transition: box-shadow 0.5s ease-out;
+  margin: 5px;
+}
+
+.SubmitButton:hover{
+  transition: box-shadow 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background-color: #a6d092;
   color: white;
 }
