@@ -68,7 +68,7 @@ function getFormInput(){
 
 function start(){
     // Makes sure user name is valid by making sure it has at least 3 characters, is not empty, and is a string and stops the progam if it isn't valid
-    if (typeof orderInfo.userName != 'string' || orderInfo.userName == "" || orderInfo.userName.length < 3){
+    if (typeof orderInfo.userName != 'string' || orderInfo.userName == "" || orderInfo.userName.length < 3 || orderInfo.userName.length > 15){
         alert("Please enter a valid name")
         return
     }
@@ -102,7 +102,7 @@ function start(){
     // Calculates change by subtracting the total price from the money value the user inputs 
     change = orderInfo.userMoney - totalPrice;
     // Reciept output
-    ReceiptOutput.innerHTML += "<h3>Receipt:</h3>";
+    ReceiptOutput.innerHTML += "<hr><h3>Receipt:</h3>";
     ReceiptOutput.innerHTML += "<p><b>Name: </b>" + orderInfo.userName + "</p>";
     ReceiptOutput.innerHTML += "<p><b>Money:</b> $" + orderInfo.userMoney.toFixed(2) + "</p>";
     ReceiptOutput.innerHTML += "<p><b>Total Order Cost:</b> $" + totalPrice.toFixed(2) + "</p>";
