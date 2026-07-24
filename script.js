@@ -68,7 +68,7 @@ function getFormInput(){
 
 function start(){
     // Makes sure user name is valid by making sure it has at least 3 characters, is not empty, and is a string and stops the progam if it isn't valid
-    if (typeof orderInfo.userName != 'string' || orderInfo.userName == "" || orderInfo.userName.length < 3 || orderInfo.userName.length > 15){
+    if (typeof orderInfo.userName != 'string' || orderInfo.userName == "" || orderInfo.userName.length < 2 || orderInfo.userName.length > 15){
         alert("Please enter a valid name")
         return
     }

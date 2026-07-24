@@ -108,3 +108,15 @@ button:hover{
   background-color: #a6d092;
   color: white;
 }
+
+.InputFields{
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 5px;
+  width: 150px;
+  height: 25px;
+  margin: 5px;
+}
